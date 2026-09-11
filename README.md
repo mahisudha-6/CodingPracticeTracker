@@ -91,15 +91,15 @@ For testing and demonstration, two users have been prepopulated (password is `ad
 
 ---
 
-## 🎤 Interview Talking Points (Resume Builders)
+## 🧭 Possible Next Steps
 
-Be prepared to discuss these core concepts during technical placement rounds:
+- Pagination on View Problems / All Activity for very large datasets.
+- Connection pooling (e.g., HikariCP) instead of a fresh JDBC connection per query.
+- bcrypt/Argon2 password hashing with per-user salt.
+- Unit tests for the `service` layer's validation logic.
 
-1. **Separation of Concerns (MVC/Layered Pattern)**:
-   * Highlight how the UI components only talk to the `Service` layer, which performs validation, and the `Service` layer interacts with the `DAO` layer for SQL execution. This keeps the application maintainable, loose, and testable.
-2. **Relational Database Design**:
-   * Explain the relationships: `coding_problems` matches `users(id)` (1-to-many relationship, with `ON DELETE CASCADE` so deleting a user wipes out their problems) and maps to `topics(id)` (1-to-many lookup, with `ON DELETE RESTRICT` preventing removal of active topics).
-3. **Database Security (SQL Injections)**:
-   * Highlight that `PreparedStatement` was used for all query building instead of regular concatenations to compile SQL plans beforehand and safely escape user inputs.
-4. **Custom Exception Hierarchies**:
-   * Talk about throwing unchecked `DatabaseException` for network/schema issues and checked `ValidationException` for incorrect user input errors to handle UI alerts gracefully.
+---
+
+## 🙌 Built With
+
+Java • Swing • JDBC • MySQL
