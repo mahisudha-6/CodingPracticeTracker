@@ -1,0 +1,7 @@
+# Database Connection Settings
+# Copy this file to "config.properties" (same folder) and fill in your own
+# local MySQL credentials. config.properties is gitignored so your real
+# password never ends up in version control.
+db.url=jdbc:mysql://localhost:3306/coding_tracker_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.username=root
+db.password=YOUR_MYSQL_PASSWORD_HERE

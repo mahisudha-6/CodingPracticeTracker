@@ -1,0 +1,25 @@
+# Compiled classes
+/bin/
+*.class
+
+# JDBC driver jar (each dev downloads their own — see README)
+/lib/*.jar
+
+# Real local database credentials — never commit this.
+# Copy config.properties.example to config.properties and fill in your own.
+config.properties
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Crash logs
+hs_err_pid*.log
