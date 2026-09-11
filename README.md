@@ -103,3 +103,4 @@ For testing and demonstration, two users have been prepopulated (password is `ad
 ## 🙌 Built With
 
 Java • Swing • JDBC • MySQL
+
